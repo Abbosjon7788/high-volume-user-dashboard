@@ -4,7 +4,10 @@ import {generateUsers, type User} from '../utils/generateUsers'
 export type SortField = 'firstName' | 'lastName' | 'email' | 'age' | 'department'
 export type SortDirection = 'asc' | 'desc'
 
+// ---------------------------------------------------------------------
+
 interface UserState {
+    // states
     users: User[]
     isLoading: boolean
     error: string | null
@@ -15,6 +18,7 @@ interface UserState {
     selectedUser: User | null
     toastMessage: string | null
 
+    // methods
     initialize: () => void
     setSearch: (search: string) => void
     setSort: (field: SortField) => void
@@ -23,6 +27,8 @@ interface UserState {
     updateUser: (updated: User) => Promise<void>
     setToast: (msg: string | null) => void
 }
+
+// ---------------------------------------------------------------------
 
 export const useUserStore = create<UserState>((set, get) => ({
     users: [],
