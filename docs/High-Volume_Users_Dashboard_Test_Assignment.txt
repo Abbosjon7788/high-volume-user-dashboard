@@ -1,0 +1,78 @@
+🧪 Test Assignment: High-Volume Users Dashboard (React)
+
+📌 Objective
+
+Build a performant React application that handles a large dataset and
+demonstrates rendering and state optimization.
+
+------------------------------------------------------------------------
+
+✅ Requirements
+
+Dataset
+
+-   Minimum 10,000 users
+-   Unique IDs required
+-   Data source is flexible (API, mock generator, etc.)
+
+------------------------------------------------------------------------
+
+Users Table
+
+Implement:
+
+-   Infinite scroll or pagination
+-   Sorting (e.g., name, email, age)
+-   Search (debounced, ~300–500ms)
+-   At least one filter
+
+Performance expectation: UI must remain smooth while interacting.
+
+------------------------------------------------------------------------
+
+Performance (Critical)
+
+-   Row virtualization (mandatory)
+-   Include at least one expensive row computation
+-   Apply re-render optimizations (memoization, stable props, etc.)
+
+------------------------------------------------------------------------
+
+User Interaction
+
+-   Row click → Details modal
+-   Editable fields
+-   Optimistic update
+-   Simulated random failure + rollback
+
+------------------------------------------------------------------------
+
+UI States
+
+-   Loading
+-   Error
+-   Empty state
+
+------------------------------------------------------------------------
+
+⚙️ Technical Notes
+
+-   React + Hooks
+-   Clean component structure
+-   Any libraries allowed
+
+------------------------------------------------------------------------
+
+📦 Deliverables
+
+-   Source code
+-   Run instructions
+
+------------------------------------------------------------------------
+
+🎯 Evaluation Focus
+
+-   Performance & rendering strategy
+-   State management
+-   Re-render control
+-   Code quality
